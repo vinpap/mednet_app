@@ -106,7 +106,7 @@ def predict(images):
 
 
 
-model = pickle.load(open("best_model.pkl", "rb"))
+model = torch.load(open("best_model.pkl", "rb"), map_location=torch.device('cpu'))
 
 
 
